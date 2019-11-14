@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+        Create date : 14.11.19
+        Modified date :
+        Description   : This is splash screen with lottie. And it's launching activity.
+        Created by  : Imtiaz
+        -->
+
+    <!--splash screen lottie-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <!-- <ImageView
+             android:src="@drawable/applogo"
+             android:layout_width="200dp"
+             android:layout_height="150dp"/> -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieId"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/lottie" />
+    </LinearLayout>
+
+    <!--splash screen progressBar-->
+    <ProgressBar
+        android:id="@+id/progressBarId"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#fff"
+        android:progressTint="#FF78A7" />
+</RelativeLayout>
